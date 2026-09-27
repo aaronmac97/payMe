@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: payMe
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pay_me
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: false
+
+        format_sql: false
